@@ -7,8 +7,27 @@
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-    
+    <!-- Contenedor principal que centra todo el contenido -->
+    <div class="container">
+        <!-- Titulo de la aplicacion -->
+        <h1>Calculadora de Edad</h1>
 
+        <!-- Formulario donde se el usuario debe ingresar su fecha -->
+        <form id="ageForm">
+            <!-- Etiqueta para que el usuario ingrese su fecha -->
+            <label for="birthdate">Fecha de nacimiento: </label>
+            <!-- Campo de tipo fecha para que el usuario selecicone su nacimiento -->
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <!-- Boton para calcular la edad -->
+            <button type="submit">Calcular edad</button>
+        </form>
+
+        <!-- Se muestra el resultado del calculo -->
+        <div id="result"></div>
+    </div>
+
+    <!-- Enlace para archivo de javascript -->
     <script src="js/app.js"></script>
 </body>
 </html>
